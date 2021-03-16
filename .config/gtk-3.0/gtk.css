@@ -1,0 +1,30 @@
+/*Panel de Xfce*/
+.xfce4-panel {
+	border-radius: 15px;
+	border-top-left-radius:30px;
+	border-top-right-radius:30px;
+	font-size: 13px;
+	color: black;
+
+}
+
+/* Thunar*/
+
+
+
+window.thunar paned > scrolledwindow treeview.view:selected {
+text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+background: linear-gradient(to right,#FE0317 , #FC9B6D);
+-gtk-secondary-caret-color: #215d9c;
+}
+
+
+
+#whiskermenu-window button:hover {
+background: linear-gradient(to right,#FE0317 , #FC9B6D);
+	color: #fff;
+}
+#whiskermenu-window button:checked {
+background: linear-gradient(to right,#FE0317 , #FC9B6D);
+	color: #fff;
+}
