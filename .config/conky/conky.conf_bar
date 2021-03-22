@@ -1,0 +1,93 @@
+conky.config = {
+	background = false,
+	update_interval = 1,
+
+	cpu_avg_samples = 2,
+	net_avg_samples = 2,
+	temperature_unit = 'celsius',
+
+	double_buffer = true,
+	no_buffers = true,
+	text_buffer_size = 2048,
+	alignment = 'top_right',
+	gap_x = 0,
+	gap_y = -43,
+	minimum_height=200,
+	minimum_width=200,
+	own_window = true,
+	own_window_type = 'normal',
+	own_window_transparent = true,
+	own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+	own_window_argb_visual = true,
+	own_window_argb_value = 400,
+
+	border_inner_margin = 0,
+	border_outer_margin = 0,
+
+
+	draw_shades = false,
+	draw_outline = false,
+	draw_borders = false,
+	draw_graph_borders = false,
+	default_shade_color = '112422',
+
+	override_utf8_locale = true,
+	use_xft = true,
+        font="Ubuntu Nerd Font:size=10",
+	xftalpha = 2000,
+	uppercase = false,
+
+	default_color = '#D6D5D4',
+	own_window_colour = '000000',
+
+	color1 = "#B4D7EA", 
+	color2 = "#5294E2",
+	red = "#FF0014",
+
+}
+
+conky.text = [[
+${font Hack Nerd Font:size=152}${color #1a1a1a}ﱢﱢ
+${voffset -87}${font Hack Nerd Font:size=152}${color #1a1a1a}ﱢﱢ
+${voffset -87}${font Hack Nerd Font:size=152}${color #1a1a1a}ﱢﱢ
+${voffset -87}${font Hack Nerd Font:size=152}${color #1a1a1a}ﱢﱢ
+${voffset -87}${font Hack Nerd Font:size=152}${color #1a1a1a}ﱢﱢ
+${voffset -1150}
+${alignc}${font DaddyTimeMono Nerd Font:size=30}${color #FD354A}${time %I:%M}
+${alignc}${voffset -20}${font DaddyTimeMono Nerd Font:size=12}${color #C5C5C5}${time %a %d %b %Y}
+
+
+
+
+${alignc}${font DaddyTimeMono Nerd Font:size=9}${color #C5C5C5}ﱘ ${mpd_title 18}
+${alignc}${font DaddyTimeMono Nerd Font:size=9}ﴁ ${mpd_artist}
+${alignc}${color #FD354A}${mpd_bar 6, 150}
+${offset 150}${font DaddyTimeMono Nerd Font:size=9}${color #C5C5C5}$mpd_elapsed/$mpd_length
+
+
+
+
+
+
+${alignc}${font DaddyTimeMono Nerd Font:size=25}${color #FD354A}--- ---
+
+${offset 70}${font DaddyTimeMono Nerd Font:size=25}${color #FD354A}
+${voffset -15}${offset 54}${font DaddyTimeMono Nerd Font:size=9}${color #C5C5C5}$fs_used
+${voffset -86}
+${offset 160}${font DaddyTimeMono Nerd Font:size=25}${color #FD354A}
+${voffset -15}${offset 140}${font DaddyTimeMono Nerd Font:size=9}${color #C5C5C5}$mem
+
+${offset 70}${font DaddyTimeMono Nerd Font:size=25}${color #FD354A}
+${voffset -15}${offset 64}${font DaddyTimeMono Nerd Font:size=9}${color #C5C5C5}$uptime_short
+${voffset -86}
+${offset 160}${font DaddyTimeMono Nerd Font:size=25}${color #FD354A}龍
+${voffset -15}${offset 160}${font DaddyTimeMono Nerd Font:size=9}${color #C5C5C5}$cpu%
+
+${offset 70}${font DaddyTimeMono Nerd Font:size=25}${color #FD354A}糖
+${voffset -15}${offset 84}${font DaddyTimeMono Nerd Font:size=9}${color #C5C5C5}$acpitemp
+${voffset -86}
+${offset 160}${font DaddyTimeMono Nerd Font:size=25}${color #FD354A}
+${voffset -15}${offset 160}${font DaddyTimeMono Nerd Font:size=9}${color #C5C5C5}$battery_percent%
+
+]]
+
