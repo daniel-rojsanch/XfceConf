@@ -1,0 +1,67 @@
+conky.config = {
+	background = false,
+	update_interval = 1,
+
+	cpu_avg_samples = 2,
+	net_avg_samples = 2,
+	temperature_unit = 'celsius',
+
+	double_buffer = true,
+	no_buffers = true,
+	text_buffer_size = 2048,
+	alignment = 'top_middle',
+	gap_x = 0,
+	gap_y = 30,
+	minimum_height=200,
+	minimum_width=0,
+	maximum_width = 280,
+	maximum_height=200,
+	own_window = true,
+	own_window_type = 'normal',
+	own_window_transparent = true,
+	own_window_hints = 'undecorated,below,sticky,skip_taskbar,skip_pager',
+	own_window_argb_visual = true,
+	own_window_argb_value = 400,
+
+	border_inner_margin = 0,
+	border_outer_margin = 0,
+
+
+	draw_shades = false,
+	draw_outline = false,
+	draw_borders = false,
+	draw_graph_borders = false,
+	default_shade_color = '112422',
+
+	override_utf8_locale = true,
+	use_xft = true,
+        font="Ubuntu Nerd Font:size=10",
+	xftalpha = 2000,
+	uppercase = true,
+
+	default_color = '#D6D5D4',
+	own_window_colour = '000000',
+
+
+}
+
+conky.text = [[
+${alignc}${font  Anurati:size=45}${color #000000}${time %A}
+${alignc}${voffset -19}${font Quicksand SemiBold:size=13}${time %d %B %Y}
+${alignc}${font Quicksand SemiBold:size=13}-${time %I:%M}-
+
+
+${alignc}${font DaddyTimeMono Nerd Font:size=9}ﱘ ${font Quicksand SemiBold:size=9}${mpd_title 18}
+${alignc}${font DaddyTimeMono Nerd Font:size=9}ﴁ ${font Quicksand SemiBold:size=9}${mpd_artist}
+${alignc}${color #660010}${mpd_bar 6, 180}
+${offset 195}${color #000000} ${font Quicksand SemiBold:size=9}$mpd_elapsed/$mpd_length
+
+
+${voffset -279}${alignc}${font  Anurati:size=45}${color #660010}${time %A}
+
+
+${voffset 30}${alignc}${font DaddyTimeMono Nerd Font:size=25}${color #660010}             
+${voffset -15}${font Quicksand SemiBold:size=9}${color #000000}$fs_used${offset 80}$mem${offset 80}$battery_percent%
+
+
+]]
