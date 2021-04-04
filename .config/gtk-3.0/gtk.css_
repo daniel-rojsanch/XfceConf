@@ -1,0 +1,25 @@
+
+.xfce4-panel {
+	border-radius: 15px;
+	border-top-left-radius:35px;
+	border-top-right-radius:35px;
+	font-size: 13px;
+
+}
+
+
+
+#xfce4-power-manager-plugin image{
+	    -gtk-icon-transform: scale(0.5);
+}
+
+
+#pulseaudio-button image{
+	    -gtk-icon-transform: scale(0.5);
+}
+
+#xfce4-power-manager-plugin, #pulseaudio-button,  #sn-button{
+	    background-color:#CDC2B0;
+	    border-radius: 15px;
+	    margin:4px;
+}
